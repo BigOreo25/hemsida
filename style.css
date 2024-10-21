@@ -1,0 +1,68 @@
+.grid-container{
+display:grid;
+height:100vh;
+
+grid-template-columns: 0.5fr 2fr 3fr;
+grid-template-rows: 1fr 0.5fr 3fr 3fr 1.5fr;
+
+grid-template-areas:
+"logo header header"
+
+"nav nav nav"
+
+"crab1 crab1 crab2"
+
+"crab3 crab3 crab4"
+
+"footer footer footer";
+
+}
+
+.logo{
+    grid-area: logo;
+    background-color: #555;
+    display:flex;
+    justify-content: center;
+}
+
+header{
+    grid-area: header;
+    background-color: #666;
+    display:flex;
+    justify-content;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #444;
+}
+
+.crab1{
+    grid-area: crab1;
+    background-color: rgb(120, 120, 120);
+}
+
+.crab2{
+    grid-area: crab2;
+    background-color: rgb(150, 150, 150);
+}
+
+.crab3{
+    grid-area: crab3;
+    background-color: rgb(120, 120, 120);
+}
+
+.crab4{
+    grid-area: crab4;
+    background-color: rgb(150, 150, 150);
+}
+
+footer{
+    grid-area: footer;
+    background-color: #727272;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
